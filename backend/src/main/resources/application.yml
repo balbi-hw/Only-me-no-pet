@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/virtualpet}
+    username: ${DB_USER:virtualpet}
+    password: ${DB_PASSWORD:virtualpet}
+  flyway:
+    enabled: true
+server:
+  port: 8080

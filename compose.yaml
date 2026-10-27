@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: virtualpet
+      POSTGRES_USER: virtualpet
+      POSTGRES_PASSWORD: virtualpet
+    ports:
+      - "5432:5432"
+    volumes:
+      - pet-db:/var/lib/postgresql/data
+volumes:
+  pet-db:
